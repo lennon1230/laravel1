@@ -69,6 +69,7 @@ class AdminProductController extends Controller
 
     public function destroy(Product $product)
     {
+        
         if(isset($product->cover)){
             $url = $product->cover;
             $url = explode('storage/', $url);
@@ -82,4 +83,6 @@ class AdminProductController extends Controller
         $product->delete();
         return redirect()->back();
     }
+
+    
 }

@@ -38,7 +38,7 @@ class StoreProductFormRequest extends FormRequest
             ],
             'price' => [
                 'required',
-                'String'
+                'numeric'
             ],
             'description' => [
                 'nullable',
