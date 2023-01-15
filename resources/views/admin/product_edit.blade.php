@@ -19,7 +19,7 @@
                             class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 
                                 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 
                                 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors 
-                                duration-200 ease-in-out" value="{{$product->name ?? old('name')}}">
+                                duration-200 ease-in-out" value="{{ old('name', $product->name)}}">
                         </div>
                     </div>
 
@@ -30,7 +30,7 @@
                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 
                                    focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 
                                    text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors 
-                                   duration-200 ease-in-out" value="{{$product->price ?? old('price')}}"/>
+                                   duration-200 ease-in-out" value="{{ old('price', $product->price)}}"/>
                         </div>
                     </div>
 
@@ -41,7 +41,7 @@
                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 
                                    focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 
                                    text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors 
-                                   duration-200 ease-in-out" value="{{$product->stock ?? old('stock')}}">
+                                   duration-200 ease-in-out" value="{{ old('stock', $product->stock)}}">
                         </div>
                     </div>
 
@@ -52,7 +52,7 @@
                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 
                                    focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 
                                    text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors 
-                                   duration-200 ease-in-out" value="{{$product->cover ?? old('cover')}}"/>
+                                   duration-200 ease-in-out" />
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@
                                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 
                                 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 
                                 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors 
-                                duration-200 ease-in-out">{{$product->description ?? old('description')}}</textarea>
+                                duration-200 ease-in-out">{{ old('description', $product->description)}}</textarea>
                         </div>
                     </div>
 
